@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: auto;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 0.3s;
+      font-family: '微軟正黑體';
+
+    }
+
+    :root {
+      font-size: 1rem;
+
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .container {
+      width: 95%;
+
+    }
+
+    .col {
+      width: 60%;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      text-align: center;
+
+    }
+
+    .line {
+      width: 80%;
+      height: 1px;
+      background: #aaa;
+    }
+
+    img {
+      width: 300px;
+
+    }
+
+    p {
+      text-align: left;
+      display: inline-block;
+
+    }
+
+
+
+    @media(min-width: 576px) {
+      :root {
+        font-size: calc(1rem + 1.125vw);
+
+      }
+
+
+
+
+      .container {
+        width: 90vw;
+        display: flex;
+        text-align: center;
+        border: 1px solid #aaa;
+        position: relative;
+      }
+
+      .row {
+        flex-direction: row;
+
+      }
+
+      .col {
+        width: 90%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+
+
+      img {
+        width: 300px;
+
+      }
+
+      h2 {
+        margin: 0.5rem 0;
+        font-weight: bold;
+
+      }
+
+      h3 {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+
+      .show {
+        display: inline-block;
+
+      }
+
+      p {
+        display: none;
+      }
+
+      .col1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <!-- 1 -->
+      <div class="col">
+        <img src="./images/職訓局.jfif">
+        <h2>泰山職訓局</h2>
+        <h3>從零開始的網頁設計課程</h3>
+        <p class="show">轉職網頁開發人員<br> 掌握就業必備職能
+          <br>由淺入深學習技術<br> 強化職場的競爭力
+        </p>
+      </div>
+
+      <!-- 2 -->
+
+      <div class="col col1">
+        <div class="line"></div>
+        <img src="./images/html.png">
+        <h3>HTML</h3>
+        <p>
+          HTML 是一種基礎技術，常與 CSS、JavaScript 一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行
+          動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+          的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+
+        </p>
+      </div>
+      <!-- 3 -->
+
+      <div class="col">
+        <div class="line"></div>
+        <img src="./images/css.png">
+
+        <h3>CSS</h3>
+        <p>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+          式表，一種用來為結構化文件（如 HTML 文件或 XML 應用）添加樣式（字型、間距和顏色等）的電腦語言，由
+          W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。
+        </p>
+      </div>
+      <!-- 4 -->
+
+      <div class="col">
+        <div class="line"></div>
+        <img src="./images/js.png">
+
+        <h3>JavaScript</h3>
+        <p>JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是
+          一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+
+        </p>
+      </div>
+      <!-- 5 -->
+      <div class="col">
+        <div class="line"></div>
+
+        <img src="./images/jq.jpg">
+        <h3>jQuery</h3>
+        <p>jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的網站中，有 65%
+          使用了jQuery，是目前最受歡迎的
+          JavaScript 函式庫。
+        </p>
+      </div>
+      <!-- 6 -->
+
+      <div class="col">
+        <div class="line"></div>
+        <img src="./images/bs.png">
+        <h3>Bootstrap
+        </h3>
+        <p>Bootstrap 是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與
+          之對應的「後端」是在伺服器上面執行的程式碼）框架，包括 HTML、CSS及JavaScript 的框架，提供字體排印、
+          表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+        </p>
+      </div>
+      <!-- 7 -->
+
+      <div class="col">
+        <div class="line"></div>
+        <img src="./images/sass.png">
+        <h3>Sass</h3>
+      </div>
+      <!-- 8 -->
+
+      <div class="col">
+        <div class="line"></div>
+        <img src="./images/1200px-Vue.js_Logo.png">
+        <h3>Vue.js</h4>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
